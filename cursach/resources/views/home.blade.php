@@ -151,7 +151,7 @@
     </div>
     <section>
         <ul>
-            <li><a href="/mistake">О нас</a></li>
+            <li><a href="{{ route('reviews') }}">Отзывы</a></li>
             <li><a href="{{ route('cart') }}">Корзина</a></li>
             <li><a href="{{ route('profile') }}">Профиль</a></li>
         </ul>

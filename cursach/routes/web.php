@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\MistakeController;
+use App\Http\Controllers\ReviewsController;
 
 
 
@@ -30,5 +31,11 @@ Route::group(['auth'], function () {
     Route::post('/admin/products/store_category', [ProductController::class, 'storeCategory'])->name('admin.products.store_category');
 });
 Route::get('/mistake', [MistakeController::class, 'index'])->name('mistake');
+Route::get('/reviews', [ReviewsController::class, 'allReviews'])->name('reviews');
+Route::post('/review/create', [ReviewsController::class, 'CreateReview'])->name('create.review');
+Route::post('/review/store', [ReviewsController::class, 'storeReview'])->name('store.review');
+
+
+
 
 
