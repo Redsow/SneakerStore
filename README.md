@@ -15,11 +15,11 @@
 
     Клонируйте репозиторий:
 
-git clone https://github.com/papamxzhet2994/foodoo.git
+git clone https://github.com/Redsow/SneakerStore.git
 
     Перейдите в каталог проекта:
 
-cd foodoo
+cd SneakerStore
 
     Установите зависимости Composer:
 
