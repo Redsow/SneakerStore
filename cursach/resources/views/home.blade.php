@@ -150,7 +150,7 @@
         <a class="logo-but" href="/">SneakerStore</a>
     </div>
     <section>
-        <ul>
+        <ul class="menu">
             <li><a href="{{ route('reviews') }}">Отзывы</a></li>
             <li><a href="{{ route('cart') }}">Корзина</a></li>
             <li><a href="{{ route('profile') }}">Профиль</a></li>

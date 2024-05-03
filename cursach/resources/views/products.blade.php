@@ -21,7 +21,7 @@
         <section class="products">
             @foreach($products as $product)
                 <div class="product-card">
-                    <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}">
+                    <img src="{{ asset('storage/' . $product->image) }}" alt="Product Image">
                     <div class="product-details">
                         <h2>{{ $product->name }}</h2>
                         <p>{{ $product->description }}</p>

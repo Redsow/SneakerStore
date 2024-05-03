@@ -73,7 +73,7 @@ class ProductController extends Controller
         }
 
     }
-        public function uploadPhoto($request)
+        public function uploadPhoto(Request $request)
         {
             $path = $request->file('image')->store('products', 'public');
             return $path;

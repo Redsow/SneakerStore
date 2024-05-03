@@ -4,7 +4,7 @@
 <a href="/" class="return-link">Вернуться на главную</a>
 @if($cartItems->count() > 0)
 <p class="cart-title">Ваша корзина:</p>
-    <ul>
+    <ul class="cart-items">
         <div class="products">
         @foreach($cartItems as $cartItem)
             <div class="product-card">
@@ -33,12 +33,27 @@
     <p>Ваша корзина пуста.</p>
 @endif
     <style>
+
+
+        .cart-items {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            color: #1c1c1c;
+
+        }
+
         .products {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
             gap: 20px;
         }
+
 
         .product-card {
             display: flex;
